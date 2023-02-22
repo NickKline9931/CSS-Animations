@@ -1,25 +1,28 @@
 #container {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 97vh;
     width: 97vw;
 }
 
 #animated {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     height: 3rem;
     width: 3rem;
     background-color: red;
-    animation: 3s darken infinite alternate;
+    animation: 5s blackhole infinite alternate;
 }
 
-@keyframes darken {
+@keyframes blackhole {
     from {
         background-color: red;
     }
 
     to {
         background-color: purple;
+        height: 30rem;
+        width: 30rem;
+        border-radius: 50%;
     }
 }
