@@ -1,0 +1,25 @@
+#container {
+    position: relative;
+    height: 97vh;
+    width: 97vw;
+}
+
+#animated {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 3rem;
+    width: 3rem;
+    background-color: red;
+    animation: 3s darken infinite alternate;
+}
+
+@keyframes darken {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: purple;
+    }
+}
